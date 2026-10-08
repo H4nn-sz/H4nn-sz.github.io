@@ -26,12 +26,12 @@ window.PERFIL = {
 
   // Certificaciones obtenidas. "verificar" = enlace de Credly u otro sitio de verificación.
   certificaciones: [
-    { nombre: "Linux Essentials", entidad: "Cisco Networking Academy", anio: "sept. 2026", imagen: "recursos/logo-cisco.png",
+    { nombre: "Linux Essentials", entidad: "Cisco Networking Academy", anio: "sept. 2026", imagen: "recursos/logo-cisco.png?v=6",
       verificar: "https://www.credly.com/badges/46fdd43d-6b9b-4d08-8fda-361c00b2b9c9" },
-    { nombre: "PIT644 Ciberseguridad: Ethical Hacking (C|EH)", entidad: "Universidad Nacional de Ingeniería", anio: "jul. 2025", imagen: "recursos/logo-uni.png",
+    { nombre: "PIT644 Ciberseguridad: Ethical Hacking (C|EH)", entidad: "Universidad Nacional de Ingeniería", anio: "jul. 2025", imagen: "recursos/logo-uni.png?v=6",
       id: "017 - 0075279",
       verificar: "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_7028b0a5b2f718b51f29bcc9f61c824c" },
-    { nombre: "PIT620 Programación en Python Básico", entidad: "Universidad Nacional de Ingeniería", anio: "jul. 2025", imagen: "recursos/logo-uni.png",
+    { nombre: "PIT620 Programación en Python Básico", entidad: "Universidad Nacional de Ingeniería", anio: "jul. 2025", imagen: "recursos/logo-uni.png?v=6",
       id: "017 - 0078482",
       verificar: "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_9494a95cfaf313fc9d5232d74cd28bdc" }
   ],

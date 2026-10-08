@@ -87,7 +87,13 @@
   if (ocultarSiVacio(certs, "certificaciones")) {
     certs.forEach(function (x) {
       var c = x.c, t = el("article", "tarjeta cert" + (x.curso ? " en-curso" : ""));
-      t.appendChild(el("div", "sello", x.curso ? "En curso" : (c.anio || "")));
+      var cabeza = el("div", "cert-cabeza");
+      if (c.imagen) {
+        var logo = el("img", "cert-logo"); logo.src = c.imagen; logo.alt = c.entidad || ""; logo.loading = "lazy";
+        cabeza.appendChild(logo);
+      }
+      cabeza.appendChild(el("div", "sello", x.curso ? "En curso" : (c.anio || "")));
+      t.appendChild(cabeza);
       t.appendChild(marcar(el("h3", "", c.nombre), c.nombre));
       t.appendChild(marcar(el("p", "", c.entidad), c.entidad));
       if (c.id) t.appendChild(el("p", "cred-id", "ID de credencial: " + c.id));

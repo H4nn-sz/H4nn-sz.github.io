@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Portafolio · Ciberseguridad y pentesting</title>
+  <meta name="description" content="Portafolio de ciberseguridad y pentesting: certificaciones, proyectos como MailSentry y servicios para empresas.">
+  <link rel="icon" href="recursos/icono.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="nav">
+  <a class="nav-marca" href="#inicio"><span class="monograma" id="nav-monograma">··</span><span id="nav-nombre"></span></a>
+  <nav aria-label="Secciones">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#certificaciones">Certificaciones</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#experiencia">Experiencia</a>
+  </nav>
+  <a class="boton boton-claro" href="#contacto">Contacto</a>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="terminal" aria-hidden="true"><span class="prompt">$</span> <span id="escribir"></span><span class="cursor">▍</span></div>
+    <div class="hero-cuerpo">
+      <div class="avatar" id="avatar"></div>
+      <div>
+        <h1 id="nombre"></h1>
+        <p class="titulo" id="titulo"></p>
+      </div>
+    </div>
+    <p class="frase" id="frase"></p>
+    <div class="estado"><span class="punto"></span><span id="disponibilidad"></span> · <span id="ubicacion"></span></div>
+    <div class="acciones">
+      <a class="boton boton-claro" href="#proyectos">Ver proyectos</a>
+      <a class="boton" href="#servicios">Contratar servicios</a>
+      <a class="boton" id="boton-cv" href="#" download hidden>Descargar CV (PDF)</a>
+    </div>
+  </section>
+
+  <section class="seccion" id="sobre-mi">
+    <div class="etiqueta">01 · Sobre mí</div>
+    <div class="rejilla dos">
+      <div id="sobre-mi-texto" class="texto"></div>
+      <div id="habilidades" class="habilidades"></div>
+    </div>
+  </section>
+
+  <section class="seccion" id="certificaciones">
+    <div class="etiqueta">02 · Certificaciones</div>
+    <h2>Formación certificada</h2>
+    <div class="rejilla tres" id="lista-certificaciones"></div>
+  </section>
+
+  <section class="seccion" id="proyectos">
+    <div class="etiqueta">03 · Proyectos</div>
+    <h2>Lo que he construido</h2>
+    <div id="lista-proyectos" class="proyectos"></div>
+  </section>
+
+  <section class="seccion" id="servicios">
+    <div class="etiqueta">04 · Servicios</div>
+    <h2>Cómo puedo ayudar a tu empresa</h2>
+    <div class="rejilla dos" id="lista-servicios"></div>
+  </section>
+
+  <section class="seccion" id="experiencia">
+    <div class="etiqueta">05 · Trayectoria</div>
+    <div class="rejilla dos">
+      <div><h2>Experiencia</h2><ol class="linea" id="lista-experiencia"></ol></div>
+      <div><h2>Formación</h2><ol class="linea" id="lista-formacion"></ol></div>
+    </div>
+  </section>
+
+  <section class="seccion contacto" id="contacto">
+    <div class="etiqueta">06 · Contacto</div>
+    <h2>¿Hablamos?</h2>
+    <p>Para oportunidades laborales, proyectos de seguridad o una demo de MailSentry.</p>
+    <div class="acciones centrado" id="lista-contacto"></div>
+  </section>
+</main>
+
+<footer class="pie"><span id="pie-nombre"></span> · Hecho a mano, sin rastreadores ni dependencias externas.</footer>
+
+<script src="datos.js"></script>
+<script src="perfil.js"></script>
+</body>
+</html>

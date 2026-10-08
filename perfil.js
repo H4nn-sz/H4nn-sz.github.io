@@ -159,6 +159,12 @@
   ].filter(Boolean);
   canales.forEach(function (x, n) { $("lista-contacto").appendChild(marcar(enlace(x[0], x[1], n === 0 ? "boton boton-claro" : "boton"), x[1])); });
 
+  // El menú solo enlaza a secciones visibles
+  document.querySelectorAll(".nav nav a").forEach(function (a) {
+    var destino = document.querySelector(a.getAttribute("href"));
+    if (destino && destino.hidden) a.hidden = true;
+  });
+
   // Aviso en pantalla si quedan campos por completar (solo visible mientras existan)
   var faltan = document.querySelectorAll(".pendiente").length;
   if (faltan) {

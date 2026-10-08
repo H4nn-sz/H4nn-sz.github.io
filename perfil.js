@@ -90,6 +90,7 @@
       t.appendChild(el("div", "sello", x.curso ? "En curso" : (c.anio || "")));
       t.appendChild(marcar(el("h3", "", c.nombre), c.nombre));
       t.appendChild(marcar(el("p", "", c.entidad), c.entidad));
+      if (c.id) t.appendChild(el("p", "cred-id", "ID de credencial: " + c.id));
       if (c.verificar) t.appendChild(enlace("Verificar credencial ↗", c.verificar, "mini"));
       $("lista-certificaciones").appendChild(t);
     });

@@ -153,6 +153,9 @@
   linea(P.experiencia, "lista-experiencia", "puesto", "lugar");
   linea(P.formacion, "lista-formacion", "titulo", "lugar");
   if (!(P.experiencia || []).length && !(P.formacion || []).length) $("experiencia").hidden = true;
+  // Si aún no hay experiencia, la columna de formación ocupa todo el ancho
+  if (!(P.experiencia || []).length) $("lista-experiencia").parentElement.hidden = true;
+  if (!(P.formacion || []).length) $("lista-formacion").parentElement.hidden = true;
 
   // Contacto
   var c = P.contacto || {};

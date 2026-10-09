@@ -60,7 +60,7 @@ window.PERFIL = {
   ],
 
   formacion: [
-    { titulo: "[COMPLETAR] Carrera o curso", lugar: "[COMPLETAR] Universidad / instituto", periodo: "[COMPLETAR]" }
+    { titulo: "Ingeniería de Sistemas", lugar: "Universidad Peruana de Ciencias Aplicadas (UPC) · 4.º ciclo", periodo: "2025 – actualidad" }
   ],
 
   // Servicios que ofreces a empresas
@@ -72,8 +72,8 @@ window.PERFIL = {
   ],
 
   contacto: {
-    correo: "[COMPLETAR]@ejemplo.com",
-    whatsapp: "",            // formato internacional sin "+", ej. "51999999999"
+    correo: "giancarlogarcia09011@gmail.com",
+    whatsapp: "",            // pendiente: número de empresa (formato internacional sin "+", ej. "51999999999")
     linkedin: "",            // ej. "https://www.linkedin.com/in/tu-usuario"
     github: "https://github.com/H4nn-sz",
     tryhackme: "",           // perfiles de CTF (opcionales)

@@ -26,6 +26,9 @@ window.PERFIL = {
 
   // Certificaciones obtenidas. "verificar" = enlace de Credly u otro sitio de verificación.
   certificaciones: [
+    { nombre: "C3SA · Certified Cyber Security Analyst", entidad: "CyberWarFare Labs", anio: "oct. 2026", imagen: "recursos/logo-cwl.png?v=7",
+      id: "C3SA-6ac8b2eaa8a9c04f32cda5b5",
+      verificar: "https://labs.cyberwarfare.live/credential/achievement/6ac8b2eaa8a9c04f32cda5b5" },
     { nombre: "Linux Essentials", entidad: "Cisco Networking Academy", anio: "sept. 2026", imagen: "recursos/logo-cisco.png?v=6",
       verificar: "https://www.credly.com/badges/46fdd43d-6b9b-4d08-8fda-361c00b2b9c9" },
     { nombre: "PIT644 Ciberseguridad: Ethical Hacking (C|EH)", entidad: "Universidad Nacional de Ingeniería", anio: "jul. 2025", imagen: "recursos/logo-uni.png?v=6",
